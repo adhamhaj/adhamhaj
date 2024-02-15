@@ -1,0 +1,195 @@
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply blue background animation to the entire body */
+body {
+    background: linear-gradient(45deg, #000000, #000000);
+    background-size: 200% 100%;
+    animation: backgroundAnimation 10s linear infinite;
+    color: white; /* Text color */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the columns */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: rgba(136, 21, 21, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border: 1px solid #f1c40f; /* Yellow border color */
+    transition: background-color 0.3s;
+}
+
+.column h2 {
+    background-color: #000000; /* Dark blue background for titles */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the border box in the CSS column */
+.border-box {
+    border: 5px solid #f1c40f; /* Yellow border color */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+/* Style the links in the "External Links" column */
+.column.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column.links li {
+    margin-bottom: 10px;
+}
+
+/* Add hover effect for links */
+a {
+    color: white; /* Default link text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+a:hover {
+    background-color: #000000; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+/* Reset some default styles */
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply continuous background blend animation to the entire body */
+body {
+    animation: backgroundAnimation 10s linear infinite;
+    color: white; /* Text color */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(45deg, #7d0000, #000);
+        background-size: 200% 100%;
+        background-position: 0% 50%;
+    }
+    50% {
+        background: linear-gradient(45deg, #000, #7d0000);
+        background-size: 200% 100%;
+        background-position: 100% 50%;
+    }
+    100% {
+        background: linear-gradient(45deg, #7d0000, #000);
+        background-size: 200% 100%;
+        background-position: 0% 50%;
+    }
+}
+
+/* Style the header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the columns */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 23%;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px;
+    border: 1px solid #f1c40f; /* Yellow border color */
+    transition: background-color 0.3s;
+}
+
+.column h2 {
+    background-color: #000000; /* Dark blue background for titles */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the border box in the CSS column */
+.border-box {
+    border: 5px solid #f1c40f; /* Yellow border color */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+/* Style the links in the "External Links" column */
+.column.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column.links li {
+    margin-bottom: 10px;
+}
+
+/* Add hover effect for links */
+a {
+    color: white; /* Default link text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+a:hover {
+    background-color: #000000; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+}
