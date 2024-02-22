@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .text-line {
+    position: absolute;
+    left: -150px;
+    white-space: nowrap;
+    opacity: 0;
+  }
+  
+  #line1 {
+    animation: slideIn 1s ease-out 0.5s forwards, fadeIn 1s ease-out 0.5s forwards;
+  }
+  
+  #line2 {
+    animation: slideIn 2s ease-out 1s forwards, fadeIn 2s ease-out 1s forwards;
+    color: blue;
+    font-size: 1.2em;
+  }
+  
+  #line3 {
+    animation: slideIn 3s ease-out 1.5s forwards, fadeIn 3s ease-out 1.5s forwards;
+    color: green;
+    font-style: italic;
+  }
+  
+  #line4 {
+    animation: slideIn 4s ease-out 2s forwards, fadeIn 4s ease-out 2s forwards;
+    color: red;
+    font-weight: bold;
+  }
+  
+  @keyframes slideIn {
+    from {
+      left: -150px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .sprite-animation {
+    width: 100px; /* Width of a single sprite */
+    height: 100px; /* Height of a single sprite */
+    background-image: url('path-to-your-sprite.png');
+    animation: playSprite 1s steps(10) infinite;
+  }
+  
+  @keyframes playSprite {
+    from { background-position: 0px; }
+    to { background-position: -1000px; } /* Move background to display all sprite frames (adjust based on your sprite sheet) */
+  }
+    
