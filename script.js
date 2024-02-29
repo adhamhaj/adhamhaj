@@ -19,15 +19,15 @@ function hello () {
     }
     
     function divClicked() {
-        // Get the element by its ID
+        
         var dorothyElement = document.getElementById('dorothy');
         
-        // Change the left and top style attributes
-        dorothyElement.style.position = 'absolute'; // Ensure the element's position is set to absolute
+    
+        dorothyElement.style.position = 'absolute'; 
         dorothyElement.style.left = '300px';
         dorothyElement.style.top = '400px';
         
-        // For testing that the function runs
+
         alert("Dorothy has moved!");
     }
     
