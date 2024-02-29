@@ -5,7 +5,7 @@ body, h1, h2, ul, li {
     list-style: none;
 }
 
-/* Apply blue background animation to the entire body */
+
 body {
     background: linear-gradient(45deg, #000000, #000000);
     background-size: 200% 100%;
